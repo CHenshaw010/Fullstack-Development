@@ -1,26 +1,26 @@
 <div id="footer">
     <div>
         <ul class="navigation">
-            <li>
-                <a href="index.html">Home</a>
+            <li {{#if highlight_index}} class='selected' {{/if}}>
+                <a href="/">Home</a>
             </li>
-            <li class="active">
+            <li {{#if highlight_travel}} class='selected' {{/if}}>
                 <a href="/travel">Travel</a>
             </li>
-            <li>
-                <a href="rooms.html">Rooms</a>
+            <li {{#if highlight_rooms}} class='selected' {{/if}}>
+                <a href="/rooms">Rooms</a>
             </li>
-            <li>
-                <a href="meals.html">Meals</a>
+            <li {{#if highlight_meals}} class='selected' {{/if}}>
+                <a href="/meals">Meals</a>
             </li>
-            <li>
-                <a href="news.html">News</a>
+            <li {{#if highlight_news}} class='selected' {{/if}}>
+                <a href="/news">News</a>
             </li>
-            <li>
-                <a href="about.html">About</a>
+            <li {{#if highlight_about}} class='selected' {{/if}}>
+                <a href="/about">About</a>
             </li>
-            <li>
-                <a href="contact.html">Contact</a>
+            <li {{#if highlight_contact}} class='selected' {{/if}}>
+                <a href="/contact">Contact</a>
             </li>
         </ul>
         <div id="connect">
