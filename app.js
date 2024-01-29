@@ -13,6 +13,7 @@ var newsRouter = require('./app_server/routes/news');
 var mealsRouter = require('./app_server/routes/meals');
 var contactRouter = require('./app_server/routes/contact');
 var aboutRouter = require('./app_server/routes/about');
+require('./app_server/models/db');
 
 var app = express();
 
