@@ -1,21 +1,26 @@
-[
-    {
+{
+    "1": {
+        "code": "SEAFOOD",
         "link": "/meals",
         "name": "Seafood Special",
         "image": "seafoods.jpg",
         "subName": "Fried Salmon Special",
         "subDescription": "Seafood Special I'm a product overview. Here you can write more information about your product. Buyers like to know ..."
-    }, {
+    },
+    "2": {
+        "code": "SUMPTUOUS",
         "link": "/meals",
         "name": "Sumptuous Desserts",
         "image": "desserts.jpg",
         "subName": "Chocolate Ice Cream Sandwich",
         "subDescription": "Sumptuous Desserts I'm a product overview. Here you can write more information about your product. Buyers like to know ..."
-    }, {
+    },
+    "3": {
+        "code": "BUFFET",
         "link": "/meals",
         "name": "Buffet",
         "image": "buffet.jpg",
         "subName": "Mixed Buffet",
         "subDescription": "Buffet I'm a product overview. Here you can write more information about your product. Buyers like to know ..."
     }
-]
+}
