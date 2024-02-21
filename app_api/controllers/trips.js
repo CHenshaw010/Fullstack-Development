@@ -134,19 +134,15 @@ const tripsUpdateTrip = async (req, res) => {
 };
 
 const getUser = (req, res, callback) => {
-    //console.log(req)
-    //console.log( "PAYLOAD: " + req.payload);
-    //console.log( "EMAIL: " + req.payload.email);
-    //console.log('EMAIL: ' + req.body.email);
-    //console.log('USER' + User.findOne({ email: req.payload.email }));
-    if (req.payload && req.payload.email) {
+    console.log(req.auth);
+    if (req.auth && req.auth.email) {
         User
-            .findOne({ email: req.payload.email })
+            .findOne({ email: req.auth.email })
             .exec((err, user) => {
                 if (!user) {
                     return res
                         .status(404)
-                        .json({ 'message': 'User not found inside'});
+                        .json({ 'message': 'User not found in database'});
                 } else if (err) {
                     console.log(err);
                     return res
@@ -158,7 +154,7 @@ const getUser = (req, res, callback) => {
     } else {
         return res
             .status(404)
-            .json({ 'message': 'User not found outside'});
+            .json({ 'message': 'User not found from authorization token'});
     }
 };
 
