@@ -84,3 +84,4 @@ connect();
 require('./trips');
 require('./rooms');
 require('./meals');
+require('./user');
