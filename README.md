@@ -1,12 +1,12 @@
 # CS465-Fullstack-Development
 ### Full Stack Development with MongoDB, Express, Angular, and Node.js (MEAN)
 - Code **MODIFY THIS**
-  - [Application Backend]https://github.com/CHenshaw010/CS465-Fullstack
-  - [Application API]https://github.com/CHenshaw010/CS465-Fullstack
-  - [Single Page Application (SPA)]https://github.com/CHenshaw010/CS465-Fullstack
+  - [Application Backend](https://github.com/CHenshaw010/CS465-Fullstack)
+  - [Application API](https://github.com/CHenshaw010/CS465-Fullstack)
+  - [Single Page Application (SPA)](https://github.com/CHenshaw010/CS465-Fullstack)
 - Documentation
-  - [Software Design Document]https://github.com/CHenshaw010/CS465-Fullstack
-  - [Postman Testing]https://github.com/CHenshaw010/CS465-Fullstack
+  - [Software Design Document](https://github.com/CHenshaw010/CS465-Fullstack)
+  - [Postman Testing](https://github.com/CHenshaw010/CS465-Fullstack)
 
 ### Architecture
 **Compare and contrast the types of frontend development you used in your full stack project, including Express HTML, JavaScript, and the SPA.**
@@ -22,7 +22,7 @@ The backend server utilized MongoDB as it is extremely fast and scalable. Docume
 JSON is a file and data transfer format that sstores information in key-value pairs. While it can be used by any programming language, it is derived from JavaScript. JavaScript is a programming language primarily for controlling the behavior of webpages and uses JSON to transport data between components. For the Travlr Getaways sites, JSON ties the frontend and backend development pieces by defining how data is transferred between them. The frontend makes requests to the backend through the Representational State Transfer (RESTful) APIs which returns data in JSON responses.
     
 **Provide instances in the full stack process when you refactored code to improve functionality and efficiencies, and name the benefits that come from reusable user interface (UI) components.**
-This full stack development process had multiple instances of refactoring code to improve functionality and efficiency. The initial iteration of the Travlr Getaways customer site had static HTML mockups imported into Node.js and Express in [Module One]https://github.com/CHenshaw010/CS465-Fullstack/tree/module1. This code was refactored in [Module Three]https://github.com/CHenshaw010/CS465-Fullstack/tree/module3 to utilize handlebars templates to dynamically update views with JSON. This strategy enabled webpage templates to be reused while enhancing maintainability and scalability by abstracting data to an outside file. This code was further refactored in [Module Five]https://github.com/CHenshaw010/CS465-Fullstack/tree/module5 to leverage an API to request data to be populated from the database model. This strategy enables create, read, update, and delete (CRUD) operations to be requested through the use of an API. In doing so, the information in the database and the model can more efficiently evolve based on the needs of the organization.
+This full stack development process had multiple instances of refactoring code to improve functionality and efficiency. The initial iteration of the Travlr Getaways customer site had static HTML mockups imported into Node.js and Express in [Module One](https://github.com/CHenshaw010/CS465-Fullstack/tree/module1). This code was refactored in [Module Three](https://github.com/CHenshaw010/CS465-Fullstack/tree/module3) to utilize handlebars templates to dynamically update views with JSON. This strategy enabled webpage templates to be reused while enhancing maintainability and scalability by abstracting data to an outside file. This code was further refactored in [Module Five](https://github.com/CHenshaw010/CS465-Fullstack/tree/module5) to leverage an API to request data to be populated from the database model. This strategy enables create, read, update, and delete (CRUD) operations to be requested through the use of an API. In doing so, the information in the database and the model can more efficiently evolve based on the needs of the organization.
 
 ### Testing
 **Methods for request and retrieval necessitate various types of API testing of endpoints, in addition to the difficulties of testing with added layers of security. Explain your understanding of methods, endpoints, and security in a full stack application.**
