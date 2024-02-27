@@ -5,7 +5,7 @@
   - [Application API](https://github.com/CHenshaw010/CS465-Fullstack)
   - [Single Page Application (SPA)](https://github.com/CHenshaw010/CS465-Fullstack)
 - Documentation
-  - [Software Design Document](https://github.com/CHenshaw010/CS465-Fullstack)
+  - [Software Design Document](https://github.com/CHenshaw010/CS465-Fullstack/blob/main/Software%20Design%20Document.pdf)
   - [Postman Testing](https://github.com/CHenshaw010/CS465-Fullstack)
 
 ### Architecture
