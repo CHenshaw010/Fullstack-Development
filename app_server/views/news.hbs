@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>{{title}}</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="background">
+		<div id="page">
+			{{> header}}
+			<div id="contents">
+				<div class="box">
+					<div>
+						<div id="news" class="body">
+							<div class="sidebar">
+								<h3>Latest News</h3>
+								<ul>
+									{{#each latestNews}}
+									<li>
+										<a href="{{this.link}}">{{this.title}}</a>
+									</li>
+									{{/each}}
+								</ul>
+								<h3>Vacation Tips</h3>
+								<ul>
+									{{#each vacationTips}}
+									<li>
+										<a href="{{this.link}}">{{this.title}}</a>
+									</li>
+									{{/each}}
+								</ul>
+							</div>
+							<div>
+								<h1>News</h1>
+								{{#each articles}}
+								<img src="images/{{this.image}}" alt="Img">
+								<h2>{{this.title}}</h2>
+								<span class="time">{{this.date}}<br> by: {{this.author}}</span>
+								{{{this.description}}}
+								{{/each}}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{{> footer}}
+	</div>
+</body>
+</html>
