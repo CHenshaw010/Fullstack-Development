@@ -1,0 +1,351 @@
+{
+	"info": {
+		"_postman_id": "3bf79578-1afe-4718-970e-8a10a5d6407a",
+		"name": "Authorized Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33099482"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "christian.henshaw@snhu.edu",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/trips",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ1NTlmMGMwMGM4ODViNzRmNmVkYTAiLCJlbWFpbCI6ImNocmlzdGlhbi5oZW5zaGF3QHNuaHUuZWR1IiwibmFtZSI6IkNocmlzdGlhbiBIZW5zaGF3IiwiZXhwIjoxNzA5NjU4MDkyLCJpYXQiOjE3MDkwNTMyOTJ9.7h70lgTDfKSi89F3spYE-w0o3FV3vuld-neB1BjB7SU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "code",
+							"value": "test01",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "test beach",
+							"type": "text"
+						},
+						{
+							"key": "length",
+							"value": "0 days / 0 nights",
+							"type": "text"
+						},
+						{
+							"key": "start",
+							"value": "2024-04-10T08:00:00.000Z",
+							"type": "text"
+						},
+						{
+							"key": "resort",
+							"value": "test island",
+							"type": "text"
+						},
+						{
+							"key": "perPerson",
+							"value": "10.00",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "suite.jpg",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "<p>this is a token test</p>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/trips",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"trips"
+					]
+				},
+				"description": "with token"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/trips",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/trips",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"trips"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/rooms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/rooms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"rooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/meals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/meals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"meals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/trips/GALR210214",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/trips/GALR210214",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"trips",
+						"GALR210214"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/rooms/FIRSTCLASS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/rooms/FIRSTCLASS",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"rooms",
+						"FIRSTCLASS"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/meals/SEAFOOD",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/meals/SEAFOOD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"meals",
+						"SEAFOOD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/trips/test01",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ1NTlmMGMwMGM4ODViNzRmNmVkYTAiLCJlbWFpbCI6ImNocmlzdGlhbi5oZW5zaGF3QHNuaHUuZWR1IiwibmFtZSI6IkNocmlzdGlhbiBIZW5zaGF3IiwiZXhwIjoxNzA5NjU4MDkyLCJpYXQiOjE3MDkwNTMyOTJ9.7h70lgTDfKSi89F3spYE-w0o3FV3vuld-neB1BjB7SU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "code",
+							"value": "test01",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "test beach new",
+							"type": "text"
+						},
+						{
+							"key": "length",
+							"value": "0 days / 0 nights",
+							"type": "text"
+						},
+						{
+							"key": "start",
+							"value": "2025-05-10T08:00:00.000Z",
+							"type": "text"
+						},
+						{
+							"key": "resort",
+							"value": "test island new",
+							"type": "text"
+						},
+						{
+							"key": "perPerson",
+							"value": "15.00",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "suite.jpg",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "<p>this is an updated token test</p>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/trips/test01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"trips",
+						"test01"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/trips/test01",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ1NTlmMGMwMGM4ODViNzRmNmVkYTAiLCJlbWFpbCI6ImNocmlzdGlhbi5oZW5zaGF3QHNuaHUuZWR1IiwibmFtZSI6IkNocmlzdGlhbiBIZW5zaGF3IiwiZXhwIjoxNzA5NjU4MDkyLCJpYXQiOjE3MDkwNTMyOTJ9.7h70lgTDfKSi89F3spYE-w0o3FV3vuld-neB1BjB7SU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/trips/test01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"trips",
+						"test01"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

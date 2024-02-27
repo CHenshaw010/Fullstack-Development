@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "17ef6d79-f5f3-43e9-9206-c641f323356a",
+		"name": "Unauthorized Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33099482"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/trips",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "code",
+							"value": "test01",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "test beach",
+							"type": "text"
+						},
+						{
+							"key": "length",
+							"value": "0 days / 0 nights",
+							"type": "text"
+						},
+						{
+							"key": "start",
+							"value": "2024-04-10T08:00:00.000Z",
+							"type": "text"
+						},
+						{
+							"key": "resort",
+							"value": "test island",
+							"type": "text"
+						},
+						{
+							"key": "perPerson",
+							"value": "10.00",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "suite.jpg",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "<p>this is a test</p>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/trips",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"trips"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/trips/test01",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "code",
+							"value": "test01",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "test beach new",
+							"type": "text"
+						},
+						{
+							"key": "length",
+							"value": "0 days / 0 nights",
+							"type": "text"
+						},
+						{
+							"key": "start",
+							"value": "2025-05-10T08:00:00.000Z",
+							"type": "text"
+						},
+						{
+							"key": "resort",
+							"value": "test island new",
+							"type": "text"
+						},
+						{
+							"key": "perPerson",
+							"value": "15.00",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "suite.jpg",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "<p>this is an updated token test</p>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/trips/test01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"trips",
+						"test01"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/trips/test01",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/trips/test01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"trips",
+						"test01"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
