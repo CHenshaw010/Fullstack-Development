@@ -1,12 +1,14 @@
 # CS465-Fullstack-Development
 ### Full Stack Development with MongoDB, Express, Angular, and Node.js (MEAN)
-- Code **MODIFY THIS**
+- Code
   - [Application Backend](https://github.com/CHenshaw010/CS465-Fullstack/tree/main/app_server)
   - [Application API](https://github.com/CHenshaw010/CS465-Fullstack/tree/main/app_api)
   - [Single Page Application (SPA)](https://github.com/CHenshaw010/CS465-Fullstack/tree/main/app_admin)
 - Documentation
-  - [Software Design Document](https://github.com/CHenshaw010/CS465-Fullstack/blob/main/Software%20Design%20Document.pdf)
-  - [Postman Testing](https://github.com/CHenshaw010/CS465-Fullstack)
+  - [Travlr Getaways Software Design Document](https://github.com/CHenshaw010/CS465-Fullstack/blob/main/Documentation/Software%20Design%20Document.pdf)
+- Postman Testing
+  - [Authorized Tests](https://github.com/CHenshaw010/CS465-Fullstack/blob/main/Documentation/Authorized%20Tests.postman_collection.json)
+  - [Unauthorized Tests](https://github.com/CHenshaw010/CS465-Fullstack/blob/main/Documentation/Unauthorized%20Tests.postman_collection.json)
 
 ### Architecture
 **Compare and contrast the types of frontend development you used in your full stack project, including Express HTML, JavaScript, and the SPA.**
