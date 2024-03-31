@@ -1,4 +1,3 @@
-# CS465-Fullstack-Development
 ### Full Stack Development with MongoDB, Express, Angular, and Node.js (MEAN)
 - Code
   - [Application Backend](https://github.com/CHenshaw010/CS465-Fullstack/tree/main/app_server)
